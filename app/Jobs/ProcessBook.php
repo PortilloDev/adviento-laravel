@@ -2,12 +2,13 @@
 
 namespace App\Jobs;
 
+use App\Models\Book;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldBeUnique;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Queue\SerializesModels;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 
 class ProcessBook implements ShouldQueue
 {
@@ -16,9 +17,9 @@ class ProcessBook implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct()
-    {
-        //
+    public function __construct(
+        public Book $book    
+    ) {
     }
 
     /**
@@ -26,6 +27,6 @@ class ProcessBook implements ShouldQueue
      */
     public function handle(): void
     {
-        //
+        sprintf('Nuevo libro titulado %s , por el autor %s ha sido publicado', [$this->book->title, $this->book->author]);
     }
 }

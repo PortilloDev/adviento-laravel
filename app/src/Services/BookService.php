@@ -4,6 +4,7 @@ namespace App\Src\Services;
 
 use App\Models\Book;
 use App\Models\User;
+use App\Events\BookCreated;
 use App\Src\Repository\BookServiceInterface;
 
 class BookService implements BookServiceInterface
@@ -14,6 +15,9 @@ class BookService implements BookServiceInterface
         if (isset($data['tags'])) {
             $book->tags()->attach($data['tags']);
         }
+
+        event(new BookCreated($book));
+        
         return $book;
     }
 
