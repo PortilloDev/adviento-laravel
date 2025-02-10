@@ -4,10 +4,19 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/PortilloDev/grpc-protos.git"
+        }
+    ],
     "require": {
         "php": "^8.1",
+        "google/protobuf": "^4.29",
+        "grpc/grpc": "^1.57",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^10.10",
+        "ivanportillo/grpc-protos": "^1.0.1",
+        "laravel/framework": "^10.37.3",
         "laravel/horizon": "^5.30",
         "laravel/sanctum": "^3.3",
         "laravel/telescope": "^4.17",
