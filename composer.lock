@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53eca571479e81e09b4ec79aa7f5976d",
+    "content-hash": "25009a9ebca48a626d294f6fd5a51839",
     "packages": [
         {
             "name": "brick/math",
@@ -1144,16 +1144,16 @@
         },
         {
             "name": "ivanportillo/grpc-protos",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PortilloDev/grpc-protos.git",
-                "reference": "0c71893192c09da31af0664ab59b5b08f491a957"
+                "reference": "46015bc84a24c20483424e502c1ba62c9b618d5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PortilloDev/grpc-protos/zipball/0c71893192c09da31af0664ab59b5b08f491a957",
-                "reference": "0c71893192c09da31af0664ab59b5b08f491a957",
+                "url": "https://api.github.com/repos/PortilloDev/grpc-protos/zipball/46015bc84a24c20483424e502c1ba62c9b618d5c",
+                "reference": "46015bc84a24c20483424e502c1ba62c9b618d5c",
                 "shasum": ""
             },
             "require": {
@@ -1164,7 +1164,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "User\\": "src/User/"
+                    "IvanPortillo\\": "src/"
                 }
             },
             "license": [
@@ -1172,10 +1172,10 @@
             ],
             "description": "Paquete compartido con archivos generados por Protocol Buffers para gRPC.",
             "support": {
-                "source": "https://github.com/PortilloDev/grpc-protos/tree/v1.0.1",
+                "source": "https://github.com/PortilloDev/grpc-protos/tree/v1.1.0",
                 "issues": "https://github.com/PortilloDev/grpc-protos/issues"
             },
-            "time": "2025-02-10T07:03:09+00:00"
+            "time": "2025-02-12T07:35:26+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1386,25 +1386,25 @@
         },
         {
             "name": "laravel/horizon",
-            "version": "v5.30.2",
+            "version": "v5.30.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/horizon.git",
-                "reference": "baef526f036717b0090754cbd9c9b67f879739fd"
+                "reference": "7b9ee870bf0e425b956fd0433f616f98fe951f72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/horizon/zipball/baef526f036717b0090754cbd9c9b67f879739fd",
-                "reference": "baef526f036717b0090754cbd9c9b67f879739fd",
+                "url": "https://api.github.com/repos/laravel/horizon/zipball/7b9ee870bf0e425b956fd0433f616f98fe951f72",
+                "reference": "7b9ee870bf0e425b956fd0433f616f98fe951f72",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-pcntl": "*",
                 "ext-posix": "*",
-                "illuminate/contracts": "^9.21|^10.0|^11.0",
-                "illuminate/queue": "^9.21|^10.0|^11.0",
-                "illuminate/support": "^9.21|^10.0|^11.0",
+                "illuminate/contracts": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/queue": "^9.21|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.21|^10.0|^11.0|^12.0",
                 "nesbot/carbon": "^2.17|^3.0",
                 "php": "^8.0",
                 "ramsey/uuid": "^4.0",
@@ -1415,9 +1415,9 @@
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
                 "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.0|^10.4",
+                "phpunit/phpunit": "^9.0|^10.4|^11.5",
                 "predis/predis": "^1.1|^2.0"
             },
             "suggest": {
@@ -1460,9 +1460,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/horizon/issues",
-                "source": "https://github.com/laravel/horizon/tree/v5.30.2"
+                "source": "https://github.com/laravel/horizon/tree/v5.30.3"
             },
-            "time": "2025-01-13T16:51:22+00:00"
+            "time": "2025-02-11T13:52:50+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -2268,16 +2268,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.72.6",
+            "version": "2.73.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon.git",
-                "reference": "1e9d50601e7035a4c61441a208cb5bed73e108c5"
+                "reference": "9228ce90e1035ff2f0db84b40ec2e023ed802075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/1e9d50601e7035a4c61441a208cb5bed73e108c5",
-                "reference": "1e9d50601e7035a4c61441a208cb5bed73e108c5",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/9228ce90e1035ff2f0db84b40ec2e023ed802075",
+                "reference": "9228ce90e1035ff2f0db84b40ec2e023ed802075",
                 "shasum": ""
             },
             "require": {
@@ -2371,7 +2371,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-27T09:28:11+00:00"
+            "time": "2025-01-08T20:10:23+00:00"
         },
         {
             "name": "nette/schema",
